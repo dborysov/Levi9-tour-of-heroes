@@ -3,13 +3,15 @@
 import { TestBed, async } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 describe('App: Levi9TourOfHeroes', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [FormsModule],
             declarations: [
-                AppComponent
+                AppComponent,
+                HeroDetailComponent
             ],
         });
     });
