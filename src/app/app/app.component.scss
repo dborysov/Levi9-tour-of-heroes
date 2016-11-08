@@ -1,0 +1,38 @@
+$color-standard: #999;
+$color-bg-light: #eee;
+$color-link-visited: #607D8B;
+$color-link-hover: #039be5;
+$color-bg-link-hover: #CFD8DC;
+
+h1 {
+  font-size: 1.2em;
+  color: $color-standard;
+  margin-bottom: 0;
+}
+h2 {
+  font-size: 2em;
+  margin-top: 0;
+  padding-top: 0;
+}
+nav a {
+  padding: 5px 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: $color-bg-light;
+  border-radius: 4px;
+
+  &:visited,
+  &:link {
+    color: $color-link-visited;
+  }
+
+  &:hover {
+    color: $color-link-hover;
+    background-color: $color-bg-link-hover;
+  }
+
+  &.active {
+    color: $color-link-hover;
+  }
+}

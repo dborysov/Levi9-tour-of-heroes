@@ -1,0 +1,37 @@
+$color-dark: #607D8B;
+$color-light: #eee;
+$color-light-hover: #cfd8dc;
+$color-light-disabled: #ccc;
+
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 0;
+  color: $color-dark;
+  font-weight: bold;
+}
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+}
+button {
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: $color-light;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+
+  &:hover {
+    background-color: $color-light-hover;
+  }
+
+  &:disabled {
+    background-color: $color-light;
+    color: $color-light-disabled;
+    cursor: auto;
+  }
+}
